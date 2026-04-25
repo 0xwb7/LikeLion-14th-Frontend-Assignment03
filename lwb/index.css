@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 90%;
+    max-width: 420px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.app-name {
+    margin: 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.app-title {
+    margin: 0.5rem 0 0;
+    font-size: 2rem;
+}
+
+.todo-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #dddddd;
+}
+
+.todo-button {
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+    width: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.todo-checkbox {
+    width: 1rem;
+    height: 1rem;
+}
+
+.todo-text {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.todo-delete {
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 0.4rem 0.6rem;
+    width: 50px;
+}
+
+.empty {
+    text-align: center;
+    color: gray;
+}
+
+.todo-item.done .todo-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media (max-width: 1023px) {
+    .app {
+        max-width: 500px;
+    }
+
+    .app-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 1rem;
+    }
+
+    .app {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .todo-form {
+        flex-direction: column;
+    }
+
+    .todo-button {
+        width: 100%;
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .todo-input, .todo-button, .todo-text {
+        font-size: 0.9rem;
+    }
+}
+

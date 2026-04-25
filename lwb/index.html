@@ -8,21 +8,21 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    <main>
-        <header>
-            <p>Todo</p>
-            <h1>오늘의 할 일</h1>
+    <main class="app">
+        <header class="app-header">
+            <p class="app-name">Todo</p>
+            <h1 class="app-title">오늘의 할 일</h1>
         </header>
 
         <form class="todo-form" id="todoForm">
-            <input type="text" id="todoInput" class="todo-input" placeholder="할 일을 입력하세요" autocomplete="off" required>
+            <input type="text" id="todoInput" class="todo-input" placeholder="할 일을 입력하세요" autocomplete="off">
             <button type="submit" class="todo-button">추가</button>
         </form>
 
         <ul class="todo-list" id="todoList">
-            <li class="todo-item">
-                <input type="checkbox" class="todo-checkbox">
-                <span class="todo-text">test1</span>
+            <li class="todo-item done">
+                <input type="checkbox" class="todo-checkbox" checked>
+                <span class="todo-text">프론트 과제하기</span>
                 <button class="todo-delete" type="button">삭제</button>
             </li>
         </ul>
